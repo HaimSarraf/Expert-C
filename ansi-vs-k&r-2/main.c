@@ -19,6 +19,10 @@ int main() {
 
   printf("Type of TOTAL_ELEMENT is %s\n", type_of(total));
 
+  printf("But BECAREFUL, value must have a type to check its Compatibility\n");
+
+  printf("TOTAL_ELEMENTS = %zu\n", TOTAL_ELEMENTS);
+
   // the line below will occur some problems in complition
   //    if (d <= TOTAL_ELEMENTS - 2)
 
@@ -28,7 +32,7 @@ int main() {
     x = array[d + 1];
   }
 
-  printf("%d\n", x);
+  printf("x is equal to : %d\n", x);
 
   if (strcmp(type_of(total), type_of(d)) == 0) {
     printf("Types are Compatible\n");
