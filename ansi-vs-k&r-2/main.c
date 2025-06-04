@@ -31,6 +31,9 @@ int main() {
   if (d <= (int)TOTAL_ELEMENTS - 2) {
     x = array[d + 1];
   }
+  // we also could define TOTAL_ELEMENTS : sizeof(array)/sizeof(int) but it will
+  // cause some error in future, when array's data changed from int to char or
+  // double(i.g)
 
   printf("x is equal to : %d\n", x);
 
